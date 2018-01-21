@@ -1,0 +1,2 @@
+cvlc -vvv v4l2:///dev/video0:chroma=h264:width=1280:height=720 --live-caching 10 --rtsp-caching 10 --sout '#rtp{sdp=rtsp://192.168.0.192:8080}' --no-sout-audio
+cvlc -vvv v4l2:///dev/video1:chroma=h264:width=1280:height=720 --live-caching 10 --rtsp-caching 10 --sout '#rtp{sdp=rtsp://192.168.0.192:8081}' --no-sout-audio
